@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Mobile header -->
+    <div id="nav-mb" class="nav-mb">
+      <ul class="nav">
+        <li>Home <img id="close-btn" src="./asssets/icons/close.png" alt="close" /></li>
+        <li>About me</li>
+        <li>Skills</li>
+        <li>PortfolioSection</li>
+        <li>Contacts</li>
+      </ul>
+      <span class="lang">RU <b>|ENG</b></span>
+    </div>
+    <!-- Desktop header -->
+    <header class="container">
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">SkillsSection</a></li>
+        <li><a href="#">PortfolioSection</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="homeSection container">
+        <div class="bio">
+          <div>
+            <h1>Denis <br /> Novik </h1>
+            <img class="burgerMenu" id="burger"
+              src="./asssets/icons/burgerMenu.jpg"
+              alt="burgerMenu"
+            />
+          </div>
+          <p>UX | UI designer <br />24 years old, Minsk</p>
+          <span class="lang">RU <b>|ENG</b></span>
+        </div>
+        <img
+          class="mainBanner"
+          src="./asssets/images/mainBanner.png"
+          alt="banner"
+        />
+        <img
+          class="mainBanner-mb"
+          src="./asssets/images/mainBanner-mb.png"
+          alt="mainBanner-mb"
+        />
+      </section>
+      <section class="aboutMeSection">
+        <div class="container">
+          <h2 class="sectionTitle">About me</h2>
+          <p>
+            Hi, I'm Denis – UX/UI designer from Minsk. <br />
+            I'm interested in design and everything connected with it.
+          </p>
+          <p>
+            I'm studying at courses "Web and mobile design <br />
+            interfaces" in IT-Academy.
+          </p>
+          <p>
+            Ready to implement excellent projects <br />
+            with wonderful people
+          </p>
+        </div>
+      </section>
+      <section class="skillsSection container">
+        <h2 class="sectionTitle">SkillsSection</h2>
+        <p>I work in such</p>
+        <div class="tools">
+          <img src="./asssets/icons/photshop.png" alt="photshop" />
+          <img src="./asssets/icons/illstrator.png" alt="illstrator" />
+          <img src="./asssets/icons/afterEffect.png" alt="afterEffect" />
+          <img src="./asssets/icons/figma.png" alt="figma" />
+        </div>
+      </section>
+      <section class="portfolioSection">
+        <div class="container">
+          <h2 class="sectionTitle">Portfolio</h2>
+          <img
+            class="portImg"
+            src="./asssets/images/portfolio1.png"
+            alt="portfolio1"
+          />
+          <p><a href="#">Online fashion store - Homepage</a></p>
+          <img
+            class="portImg"
+            src="./asssets/images/portfolio2.png"
+            alt="portfolio2"
+          />
+          <p><a href="#">Reebok Store - Concepte</a></p>
+          <img
+            class="portImg"
+            src="./asssets/images/portfolio3.png"
+            alt="portfolio3"
+          />
+          <p><a href="#">Braun Landing Page - Concept</a></p>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <h2 class="sectionTitle">Contacts</h2>
+      <p>
+        Want to know more or just chat? <br />
+        You are welcome!
+      </p>
+      <button class="btn">Send Message</button>
+      <div class="socIcons">
+        <img src="./asssets/icons/linkedin.png" alt="linkedin" />
+        <img src="./asssets/icons/instagram.png" alt="instagram" />
+        <img src="./asssets/icons/behance.png" alt="behance" />
+        <img src="./asssets/icons/dribble.png" alt="dribble" />
+      </div>
+      <span class="subtext"
+        >Like me on <br />
+        LinkedIn, Instagram, Behance, Dribble</span
+      >
+    </footer>
+
+    <script>
+        $(document).ready(() => { 
+          //hide mobile menu 
+          $('#close-btn').click(() => { 
+              $('#nav-mb').hide() 
+          }) 
+          // show mobile menu 
+          $('#burger').click(() => { 
+              $('#nav-mb').show() 
+          }) 
+      })
+    </script>
+  </body>
+</html>

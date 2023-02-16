@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #070707;
+}
+/* общие стили */
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+/* Styles for mobile */
+.nav-mb, .burgerMenu, .mainBanner-mb{
+    display: none;
+}
+
+header{
+    padding: 32px 0;
+    border-bottom: 1px solid #828282;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.nav a{
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+}
+.nav a:hover{
+    color:#070707;
+}
+ /* home */
+ .homeSection{
+    padding-bottom: 104px;
+ }
+ .bio{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 40px;
+    padding-bottom: 30px;
+ }
+ .bio h1{
+    font-size: 48px;
+ }
+ .bio p{
+    font-size: 18px;
+ }
+ .lang{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+ }
+ .homeSection img{
+    width: inherit;
+ }
+
+ /* abou me */
+ .aboutMeSectionSection{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-top: 120px;
+    padding-bottom: 77px;
+ }
+ .sectionTitle{
+    text-align: center;
+    font-size: 34px;
+ }
+ .aboutMeSection p{
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 30px;
+ }
+ .aboutMeSection .sectionTitle{
+    margin-bottom: 17px;
+ }
+
+ .skillsSection p{
+    text-align: center;
+    font-size: 18px;
+ }
+.tools{
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 0 109px 0;
+}
+.tools img{
+    width: 166px;
+    height: 206px;
+}
+.skillsSection .sectionTitle{
+    margin: 91px 0 69px 0;
+}
+
+.portfolioSection{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-top: 208px;
+}
+.portImg{
+    width: 100%;
+}
+.portfolioSection p{
+    text-align: center;
+    padding-top: 99px;
+    padding-bottom: 95px;
+}
+.portfolioSection .sectionTitle{
+    margin-bottom: 29px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 114px;
+    padding-bottom: 123px;
+}
+.socIcons{
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.socIcons img{
+    width: 40px;
+    height: 40px;
+}
+.btn{
+    height: 42px;
+    width: 180.49964904785156px;
+    border-radius: 50px;
+    color:#f6f6f6;
+    background-color:#070707;
+    margin-bottom: 85px;
+}
+footer .sectionTitle{
+    margin-bottom: 24px;
+    text-align: center;
+}
+footer p{
+    font-size: 18px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+footer .subtext{
+    text-align: center;
+    color:#f6f6f6;
+    margin-bottom: 90px;
+}
